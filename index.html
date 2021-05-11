@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">       
+    <link rel="stylesheet" href="/sass/style.css">
+    <title>selfcare</title>
+</head>
+<body>
+    
+    <!-- Cabeçalho -->
+    <header class="header flex flex-jc-sb flex-ai-c">
+        <div class="header__logo">
+            <i class="fas fa-star"></i>
+            <span>selfcare</span>
+        </div>
+        <nav>
+            <ul class="header__menu">
+                <li class="header__menu-item">
+                    <a href="#pesquisar">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <!-- pesquisar -->
+                </li>
+                <li class="header__menu-item">
+                    <a href="#usuario">
+                        <i class="far fa-user"></i>
+                    </a>
+                    <!-- usuario -->
+                </li>
+                <li class="header__menu-item">
+                    <a href="#carrinho">
+                        <i class="fas fa-cart-plus"></i>
+                    </a>
+                    <!-- carrinho -->
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- hero -->
+
+    <section class="hero">
+        <img src="/assets/banner.png" alt="banner" class="hero__img">
+    </section>
+
+    <!-- filter-bar site -->
+
+    <div class="filter-bar flex flex-jc-sb flex-ai-c">
+        <h1 class="filter-bar__pro">
+            promoção
+        </h1>
+        <h1 class="filter-bar__quant">
+            9 produtos
+        </h1>
+    </div>
+
+    <!-- produtos -->
+
+    <section class="container-card">
+    </section>
+
+    <!-- footer -->
+
+    <footer class="rodape">
+        <section class="rodape__top flex flex-jc-sb flex-ai-c">
+            <div>
+                <ul class="rodape-menu">
+                    <li class="rodape-menu__item"><a href="#conato">Contato</a></li>
+                    <li class="rodape-menu__item"><a href="#termos">Termos de serviço</a></li>
+                    <li class="rodape-menu__item"><a href="#politica">Política de privacidade</a></li>
+                    <li class="rodape-menu__item"><a href="#cancelamento">Cancelamento, troca e reembolso</a></li>
+                </ul>
+            </div>
+
+            <div class="newsletter">
+                <h3>Newsletter</h3>
+                <div class="container-newsletter">
+                    <input class="input-email" id="input-email" type="text" placeholder="Digite seu melhor e-mail">
+                    <button class="btn-inscrever">Inscrever</button>
+                </div>
+            </div>
+        </section>
+        <section class="rodape__bottom flex flex-jc-sb flex-ai-c">
+            <div>
+                <ul class="rodape-social">
+                    <li class="rodape-social__item"><a href="#intagram"><i class="fab fa-instagram"></i></a></li>
+                    <li class="rodape-social__item"><a href="#facebook"><i class="fab fa-facebook-square"></i></a></li>
+                </ul>
+            </div>
+            <div class="pagamento">
+                <img src="https://cdn.dooca.store/49/files/bandeira-de-cartoes-1.png" alt="">
+            </div>
+        </section>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/73b3f70564.js" crossorigin="anonymous"></script>
+    <script src="/js/app.js"></script>
+</body>
+</html>

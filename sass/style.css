@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header {
+  background-color: #F9F9F9;
+  padding: 1.5rem 5%;
+}
+
+.header__logo {
+  font-weight: 500;
+}
+
+.header__menu {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.header__menu-item a {
+  color: #5CA720;
+}
+
+.hero__img {
+  width: 100%;
+}
+
+.filter-bar {
+  text-transform: uppercase;
+  padding: .9rem 5%;
+  border-bottom: 1px solid #a5a1a15b;
+}
+
+.filter-bar__pro, .filter-bar__quant {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.container-card {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  -ms-grid-columns: (minmax(250px, 2fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+  gap: 5rem;
+  padding: 5rem 5%;
+}
+
+.card {
+  max-width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: .7rem;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.25);
+}
+
+.card__img {
+  width: 250px;
+  height: 250px;
+  background-size: cover;
+  border-radius: .3rem;
+}
+
+.card__descricao {
+  padding: 0 .5rem;
+}
+
+.card__preco {
+  padding: 0 .5rem;
+  padding-bottom: .5rem;
+}
+
+.card__preco-simbolo {
+  color: #161616;
+  font-size: 1rem;
+  font-weight: 500;
+  padding-right: .3rem;
+}
+
+.card__preco-valor {
+  color: #5CA720;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.rodape__top {
+  padding: 2rem 5%;
+  border-top: 1px #a5a1a15b solid;
+  border-bottom: 1px #a5a1a15b solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.rodape__top .rodape-menu__item {
+  list-style: none;
+}
+
+.rodape__top .rodape-menu__item:not(:last-child) {
+  padding-bottom: .2rem;
+}
+
+.rodape__top .rodape-menu__item > a {
+  color: #161616;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.rodape__top .rodape-menu__item > a:hover {
+  text-decoration: underline;
+}
+
+.rodape__top .newsletter {
+  margin: 0;
+}
+
+.rodape__top .newsletter h3 {
+  font-weight: 400;
+  padding-bottom: .5rem;
+}
+
+.rodape__top .newsletter .container-newsletter .input-email {
+  border: none;
+  padding: .7rem 1.5rem;
+  border: 1px solid #a5a1a15b;
+}
+
+.rodape__top .newsletter .container-newsletter .btn-inscrever {
+  border: none;
+  padding: .7rem 1.5rem;
+  background-color: #5CA720;
+  color: #F9F9F9;
+  font-weight: 700;
+  cursor: pointer;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.rodape__top .newsletter .container-newsletter .btn-inscrever:hover {
+  background-color: #4f8d1c;
+}
+
+.rodape__bottom {
+  padding: .7rem 5%;
+}
+
+.rodape__bottom .rodape-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  gap: .8rem;
+}
+
+.rodape__bottom .rodape-social__item > a i {
+  color: #5CA720;
+  font-size: 1.6rem;
+}
+
+.rodape__bottom .pagamento {
+  max-width: 200px;
+}
+
+.rodape__bottom .pagamento img {
+  width: 100%;
+}
+
+@media (max-width: 700px) {
+  .rodape__top {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 3rem;
+  }
+  .rodape__top .newsletter {
+    width: 100%;
+  }
+  .rodape__top .newsletter .container-newsletter .input-email, .rodape__top .newsletter .container-newsletter .btn-inscrever {
+    width: 100%;
+    margin: .5rem;
+    border-radius: .2rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,20 @@
+.header {
+    background-color: $gray-ligth;
+
+    padding: 1.5rem 5%;
+    &__logo {
+        font: {
+            weight: 500;
+        }
+    }
+
+    &__menu {
+        list-style: none;
+        display: flex;
+        gap: 1.5rem;
+
+        &-item a {
+            color: $green;
+        }
+    }
+}

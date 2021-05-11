@@ -1,0 +1,13 @@
+.filter-bar {
+    
+    text-transform: uppercase;
+    padding: .9rem 5%;
+    border-bottom: 1px solid $gray;
+
+    &__pro, &__quant {
+        font: {
+            size: 1rem;
+            weight: 500;
+        }
+    }
+}
