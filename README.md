@@ -1,7 +1,7 @@
 <h1 align="center">
 selfcare
 </h1>
-Projeto de um E-commerce para aprender **Sass-Scsss**.
+Projeto de um E-commerce para aprender <strong> Sass-Scsss</strong>.
 
 ## Desing 
 
